@@ -1,2 +1,2 @@
 # python-bootcamp
-Repositória para aprender a programar em Python
+Repositório para aprender a programar em Python
