@@ -3,6 +3,8 @@ opcao = input("Digite [a] para adicionar, [r] para remover ou [s] para sair: ")
 items = []
 item = ""
 
+# Falta concluir sanitização do input do usuário (lição de casa!)
+
 while opcao != 's':
     if opcao == 'a':
         item = input("Digite o nome do item para adicionar: ")
@@ -12,11 +14,10 @@ while opcao != 's':
             print("A lista já está vazia!")
         else:
             item = input("Digite o nome do item para remover: ")
-            for i in items:
-                if i == item:
-                    items.remove(i)
-                else:
-                    print("Item não encontrado!")
+            if item in items:
+                items.remove(item)
+            else:
+                print(f"Item {item} não encontrado!")
 
     print()
 
