@@ -7,4 +7,4 @@ while len(cpf) != qtd_digitos_cpf:
 cpf_formatado = cpf[:3] + '.' + cpf[5:]
 cpf_formatado = cpf_formatado[:7] + '.' + cpf[6:]
 cpf_formatado = cpf_formatado[:11] + '-' + cpf[9:]
-print(cpf_formatado)
+print("Seu CPF é {}.".format(cpf_formatado))
